@@ -23,13 +23,16 @@
                 "name": "rackspace/php-cloudfiles",
                 "version": "master",
                 "source": {
-                    "url":  "git://github.com/rackspace/php-cloudfiles.git",
+                    "url":  "git://github.com/rackerlabs/php-cloudfiles.git",
                     "type": "git",
                     "reference": "master"
                 },
                 "dist": {
-                    "url": "https://github.com/rackspace/php-cloudfiles/zipball/master",
+                    "url": "https://github.com/rackerlabs/php-cloudfiles/zipball/master",
                     "type": "zip"
+                },
+                "autoload": {
+                    "files": ["cloudfiles.php"]
                 }
             }
         },
@@ -48,7 +51,8 @@
         "rackspace/php-cloudfiles": "*",
         "doctrine/dbal": ">=2.3",
         "dropbox-php/dropbox-php": "*",
-        "herzult/php-ssh": "*"
+        "herzult/php-ssh": "*",
+        "phpunit/phpunit": "3.7.*"
     },
     "suggest": {
         "knplabs/knp-gaufrette-bundle": "*",
